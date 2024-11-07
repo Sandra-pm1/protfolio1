@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+  
+.lastbtn{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.aclr {
+  background: -webkit-linear-gradient(#c21647, #2d3bba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 650;
+  margin-top: 1%;
+}
+.head{
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.head-clr{
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icon-clr{
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+}
+.end{
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+.form{
+  border: 1px;
+  background-color: rgb(227, 227, 227);
+}
+.body{
+  background-color: white;
+}
+body {
+            background-color: rgb(190, 195, 232);
+    } 
+
+</style>
+<body>
+
+   <!-- nav section -->
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <div class="container">
+      <a class="navbar-brand aclr " href="#"><h3>SANDRA P M</h3></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav" id="navbarNav" >
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- main section -->
+  <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+    <div class="text-center mb-5">
+         <div><h1><i class="fa-solid fa-envelope"></i></h1></div>
+        <h1 class="fw-bolder head">Get in touch</h1>
+        <p class="lead fw-normal text-muted mb-0 head-clr">Let's work together!</p>
+    </div>
+    <div class="row gx-5 justify-content-center form">
+        <div class="col-lg-8 col-xl-6">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <!-- Name input-->
+                <div class="form-floating mb-3 mt-4">
+                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                    <label for="name">Full name</label>
+                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                </div>
+                <!-- Email address input-->
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                    <label for="email">Email address</label>
+                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                </div>
+                <!-- Phone number input-->
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="phone" type="tel" placeholder="+91 7736905998" data-sb-validations="required" />
+                    <label for="phone">Phone number</label>
+                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                </div>
+                <!-- Message input-->
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                    <label for="message">Message</label>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    <div class="lastbtn">
+                      <form action="your-action-url" method="post">
+                        <button type="submit" class="btn btn-primary mt-4 mb-3">Submit</button>
+                      </form>
+                    </div>
+                    
+    </div>
+</div>
+<!-- footer -->
+<div>
+  <div class="end">
+    <div class="ms-3 mt-5">
+      <span class="text-black ms-5 ">Copyright ©️ Your Website 2024</span>
+    </div>
+</div>
+<!-- end footer -->
+</body>
+</html>
